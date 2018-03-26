@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DDCB037-004B-4746-8DC8-D80AB106654F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inzynierka</RootNamespace>
+    <AssemblyName>Inzynierka</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CurrentItem.css" />
+    <Content Include="Content\etalage.css" />
+    <Content Include="Content\form.css" />
+    <Content Include="Content\HomeStyle.css" />
+    <Content Include="Content\images\android.svg" />
+    <Content Include="Content\images\arrow2.gif" />
+    <Content Include="Content\images\b-arrow.png" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\gp.png" />
+    <Content Include="Content\images\home.png" />
+    <Content Include="Content\images\icon-eye.png" />
+    <Content Include="Content\images\img-sprite.png" />
+    <Content Include="Content\images\list-hover.png" />
+    <Content Include="Content\images\list-show.png" />
+    <Content Include="Content\images\locked.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo\acer.png" />
+    <Content Include="Content\images\logo\Apple-Logo-300x161.png" />
+    <Content Include="Content\images\logo\asus_logo.png" />
+    <Content Include="Content\images\logo\dell-old-logo.jpg" />
+    <Content Include="Content\images\logo\hp-logo.png" />
+    <Content Include="Content\images\logo\lenovo.png" />
+    <Content Include="Content\images\logo\MSI_logo_for_share2.png" />
+    <Content Include="Content\images\logo\samsung.png" />
+    <Content Include="Content\images\logo\sony_logo_PNG7.png" />
+    <Content Include="Content\images\logo\TOSHIBA_Logo.png" />
+    <Content Include="Content\images\menu-arrow-hover.png" />
+    <Content Include="Content\images\menu-arrow.png" />
+    <Content Include="Content\images\plus.png" />
+    <Content Include="Content\images\p_minus.png" />
+    <Content Include="Content\images\p_plus.png" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\star.png" />
+    <Content Include="Content\images\submit.png" />
+    <Content Include="Content\images\tag.png" />
+    <Content Include="Content\images\up.png" />
+    <Content Include="Content\items.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\LayoutStyle.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="Content\nav.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\HomeModelBD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HomeModelBD.edmx</DependentUpon>
+      <LastGenOutput>HomeModelBD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HomeModelBD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HomeModelBD.edmx</DependentUpon>
+      <LastGenOutput>HomeModelBD.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\easyResponsiveTabs.js" />
+    <EntityDeploy Include="Models\HomeModelBD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HomeModelBD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\HomeModelBD.edmx.diagram">
+      <DependentUpon>HomeModelBD.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\dist\jquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\load.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\parseJSON.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\parseXML.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\script.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\var\nonce.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\var\rquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes\attr.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes\classes.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes\prop.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\attributes\val.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\callbacks.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core\access.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core\init.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core\parseHTML.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core\ready.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\addGetHookIf.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\curCSS.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\defaultDisplay.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\swap.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\var\cssExpand.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\var\isHidden.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\var\rmargin.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\data.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\data\accepts.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\data\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\deferred.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\deprecated.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\dimensions.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\effects.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\effects\animatedSelector.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\effects\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\effects\Tween.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\event.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\event\ajax.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\event\alias.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\event\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\exports\amd.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\exports\global.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\intro.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\jquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\manipulation.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\manipulation\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\offset.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\outro.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\queue.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\queue\delay.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\selector-sizzle.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\selector.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\serialize.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\traversing.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\traversing\findFilter.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\class2type.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\concat.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\deletedIds.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\hasOwn.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\indexOf.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\pnum.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\push.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\rnotwhite.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\slice.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\strundefined.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\var\toString.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\wrap.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\changelog.txt" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\basic-carousel.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\basic-slider-with-caption.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\basic-slider-with-custom-direction-nav.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\carousel-min-max.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\css\demo.css" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\css\flexslider.css" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\dynamic-carousel-min-max.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-medium\svg\1110FC_0.svg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-medium\svg\svg_test.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-regular\svg\11014B_0.svg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-regular\svg\svg_test.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-semibold\svg\index.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-semibold\svg\style_169898.svg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\images\kitchen_adventurer_caramel.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\images\kitchen_adventurer_cheesecake_brownie.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\images\kitchen_adventurer_donut.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\images\kitchen_adventurer_lemon.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\images\logo.png" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\index.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\demo.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\froogaloop.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\jquery.easing.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\jquery.fitvid.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\jquery.flexslider.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\jquery.mousewheel.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\modernizr.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\shBrushCss.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\shBrushJScript.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\shBrushXml.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\js\shCore.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\thumbnail-controlnav.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\thumbnail-slider.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\video-wistia.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\video.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\flexslider.css" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\fonts\flexslider-icon.svg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\1.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\2.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\3.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\3miniaturka.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\4.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\images\5.jpg" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\jquery.flexslider-min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\jquery.flexslider.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\AUTHORS.txt" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\dist\jquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\dist\jquery.min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\MIT-LICENSE.txt" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\jsonp.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\load.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\parseJSON.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\parseXML.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\script.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\var\nonce.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\var\rquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\ajax\xhr.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes\attr.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes\classes.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes\prop.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\attributes\val.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\callbacks.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core\access.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core\init.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core\parseHTML.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core\ready.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\addGetHookIf.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\curCSS.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\defaultDisplay.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\swap.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\var\cssExpand.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\var\isHidden.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\var\rmargin.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\data.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\data\accepts.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\data\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\deferred.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\deprecated.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\dimensions.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\effects.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\effects\animatedSelector.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\effects\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\effects\Tween.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\event.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\event\ajax.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\event\alias.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\event\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\exports\amd.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\exports\global.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\intro.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\jquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\manipulation.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\manipulation\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\offset.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\outro.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\queue.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\queue\delay.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\selector-sizzle.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\selector.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\serialize.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\data\empty.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\data\mixed_sort.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\data\testinit.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\index.html" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\jquery.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\unit\extending.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\unit\selector.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\test\unit\utilities.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\traversing.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\traversing\findFilter.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\class2type.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\concat.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\deletedIds.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\hasOwn.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\indexOf.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\pnum.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\push.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\rnotwhite.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\slice.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\strundefined.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\support.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\var\toString.js" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\wrap.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.easydropdown.js" />
+    <Content Include="Scripts\jquery.etalage.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mixitup.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\my.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="Scripts\uisearch.js" />
+    <Content Include="Web.config" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\.bower.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\bower.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\bower_components\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\composer.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\CONTRIBUTING.md" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\base.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\font.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\mixins.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\resets.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\responsive.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\theme.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\css\variables.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-medium\eot\1110FC_0.eot" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-medium\ttf\1110FC_0.ttf" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-medium\woff\1110FC_0.woff" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-regular\eot\11014B_0.eot" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-regular\ttf\11014B_0.ttf" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-regular\woff\11014B_0.woff" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-semibold\eot\style_169898.eot" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-semibold\ttf\style_169898.ttf" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\demo\fonts\webfonts\geo-semibold\woff\style_169898.woff" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\flexslider.less" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\fonts\flexslider-icon.eot" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\fonts\flexslider-icon.ttf" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\fonts\flexslider-icon.woff" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\LICENSE.md" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\.bowerrc" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\.jscsrc" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\.npmignore" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\bower.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\CONTRIBUTING.md" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\dist\jquery.min.map" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\package.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\README.md" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\node_modules\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\package.json" />
+    <Content Include="woocommerce-FlexSlider-0690ec2\README.mdown" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CurrentItemController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DetailsModel.cs" />
+    <Compile Include="Models\HomeModelBD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeModelBD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeModelBD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeModelBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeModelBD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Images.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MiniOrder.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orders.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Products.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShopViewModel.cs" />
+    <Compile Include="Models\Specs.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SuperOrder.cs">
+      <DependentUpon>HomeModelBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\HomeIndex.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Views\Items\ItemsIndex.cshtml" />
+    <Content Include="Views\Login\LoginIndex.cshtml" />
+    <Content Include="Views\CurrentItem\CurrentItemIndex.cshtml" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53018</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53018/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

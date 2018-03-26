@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <!-- header-section-starts -->
+
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="@Url.Action("HomeIndex","Home")"><img src="~/Content/images/logo.png" alt="" /></a>
+                </div>
+                <div class="header-top-right">
+                    <!-- start search-->
+                    <div class="search-box">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"> </span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search-scripts -->
+                    <script src="~/Scripts/classie.js"></script>
+                    <script src="~/Scripts/uisearch.js"></script>
+                    <script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+                    </script>
+                    <!-- //search-scripts -->
+                  
+                    <a href="cart.html" id="test"><i class="cart"></i></a>
+                </div>
+
+            </div>
+        </div>
+  
+
+        <div class="container body-content">
+            @RenderBody()
+            
+        </div>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="footer">
+                <div class="container">
+
+                    <div class="footer-social-icons col-lg-4">
+                       <p class="font-footer">Media Społecznościowe: </p>
+                        <a href="#"><i class="fb"></i></a>
+                        <a href="#"><i class="tw"></i></a>
+                        <a href="#"><i class="in"></i></a>
+                    </div>
+                    <div class="footer-icons-shop col-lg-4">
+                        <p class="font-footer">Pobierz Aplikację mobilną: </p>
+                        <div class="googleplay">
+                            <a href="#">
+                                <img src="~/Content/images/android.svg" alt="" width="130" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-contact col-lg-4" id="contact">
+                        <p>111-222-333</p> <br />
+                        <p>pon-pt: 9.00-17.00</p> <br />
+                        <p>ul. Jakastam 9/11</p> <br />
+                        <p>11-111 Nazwa</p> <br />
+                        <br />
+                        <p>aaaaaaaa@gmail.com</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

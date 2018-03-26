@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Inzynierka.Models.ShopViewModel> 
+@{
+    ViewBag.Title = "ItemsIndex";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/HomeStyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/items.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/Content/jquery-ui.css">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/my.js"></script>
+</head>
+<body>
+    @if (Model != null)
+    {
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-3 col-sm-6 col-xs-12" id="menu">
+                <div class="my_accordion">
+                    <h3>Kategorie</h3>
+                    <div>
+                        <ul>                     
+                            <li>@Html.ActionLink("Asus","ItemsIndex",new { Manufacturer = "Asus" })</li>
+                            <li>@Html.ActionLink("MSI", "ItemsIndex", new { Manufacturer = "MSI" })</li>
+                            <li>@Html.ActionLink("Dell", "ItemsIndex", new { Manufacturer = "Dell" })</li>
+                            <li>@Html.ActionLink("Acer", "ItemsIndex", new { Manufacturer = "Acer" })</li>
+                            <li>@Html.ActionLink("Lenovo", "ItemsIndex", new { Manufacturer = "Lenovo" })</li>
+                            <li>@Html.ActionLink("HP", "ItemsIndex", new { Manufacturer = "HP" })</li>
+                            <li>@Html.ActionLink("Sony(dopoprawy)", "ItemsIndex", new { Manufacturer = "MSI" })</li>
+                            <li>@Html.ActionLink("Toshiba", "ItemsIndex", new { Manufacturer = "Toshiba" })</li>
+                            <li>@Html.ActionLink("Apple", "ItemsIndex", new { Manufacturer = "Apple" })</li> 
+                        </ul>
+                    </div>
+                    <h3>Filtry</h3>
+                    <div class="my_accordion">
+                        <h3>RAM</h3>
+                        <div>
+                        <ul>
+                            <li><p>8GB</p></li>
+                            <li><p>16GB</p></li>
+                            <li><p>32GB</p></li>
+                        </ul>
+                        </div>
+                        <h3>Procesor</h3>
+                        <div>
+                            <ul>
+                                <li><p>i3</p></li>
+                                <li><p>i5</p></li>
+                                <li><p>i7</p></li>
+                            </ul>
+                        </div>
+                        <h3>DYSK</h3>
+                        <div>
+                            <ul>
+                                <li><p>SSD</p></li>
+                                <li><p>HDD</p></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-sm-6" id="item">
+               
+@foreach (var item in Model)
+{
+
+                <div class="product-list">
+                    <a href="@Url.Action("CurrentItemIndex", "CurrentItem",new { id = item.products.ID })">
+                        @{ 
+                            var base64 = Convert.ToBase64String(item.images.Image);
+                            var imgSrc = string.Format("data:image/jpg;base64,{0}", base64);
+                        }
+                        <img class="img" src="@imgSrc" width="150" height="150"/>
+                       
+                    </a>
+                        <a href="@Url.Action("CurrentItemIndex", "CurrentItem",new { id = item.products.ID })" class="name" tittle="Acer">@item.products.Manufacturer @item.products.Model
+                    </a> 
+                   
+                    <div class="description">
+
+                        <ul>
+       
+                            
+                            <li>
+                                <span>Procesor: </span>                
+                                @item.specs.Processor
+                            </li>
+                            <li>
+                                <span>Pamięć: </span>                              
+                                @item.specs.RAM <span>GB</span>
+                            </li>
+                            <li>
+
+                                <span>Dysk: </span>                              
+                                @item.specs.Disk_size <span>GB</span> @item.specs.Disk_type
+                                
+
+
+                            </li>
+                            
+                        </ul>
+
+                    </div>  
+
+                    <div class="price">
+                        <span>                         
+                              @item.products.Price <span>zł</span>
+                        </span>
+                    
+                    </div>
+
+                </div>
+   }           
+            </div>
+
+        </div>
+    </div>
+    }
+</body>
+</html>
+

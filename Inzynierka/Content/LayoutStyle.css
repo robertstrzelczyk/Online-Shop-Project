@@ -1,0 +1,20 @@
+﻿
+#search {
+     position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+
+}
+#polesearch {
+    
+}
+#shoppingIcon {
+
+    color:aliceblue;
+}
+i.mysize {
+    color:azure;
+    font-size: 3em;
+}

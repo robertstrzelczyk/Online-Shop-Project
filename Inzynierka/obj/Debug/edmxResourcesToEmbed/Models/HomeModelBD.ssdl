@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MiniOrder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SuperOrder_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Products_ID" Type="int" Nullable="false" />
+    <Property Name="Order_date" Type="datetime" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="Client_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Zip_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Tel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Specs_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Specs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Processor" Type="nvarchar" MaxLength="50" />
+    <Property Name="RAM" Type="int" />
+    <Property Name="Max_RAM" Type="int" />
+    <Property Name="Disk_size" Type="int" />
+    <Property Name="Disk_type" Type="nvarchar" MaxLength="15" />
+    <Property Name="Display_type" Type="nvarchar" MaxLength="20" />
+    <Property Name="Display_size" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="Resolution" Type="nvarchar" MaxLength="10" />
+    <Property Name="Graphics_card" Type="nvarchar" MaxLength="100" />
+    <Property Name="Battery" Type="nvarchar" MaxLength="20" />
+    <Property Name="OS" Type="nvarchar" MaxLength="50" />
+    <Property Name="Height" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="Width" Type="decimal" Precision="4" Scale="1" />
+    <Property Name="Depth" Type="decimal" Precision="4" Scale="1" />
+    <Property Name="Weight" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="Warranty" Type="int" />
+  </EntityType>
+  <EntityType Name="SuperOrder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Order_date" Type="datetime" Nullable="false" />
+    <Property Name="Client_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Zip_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Tel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Client_Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Images_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Images" Type="Self.Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Images">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MiniOrder_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="MiniOrder" Type="Self.MiniOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MiniOrder">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MiniOrder_SuperOrder">
+    <End Role="SuperOrder" Type="Self.SuperOrder" Multiplicity="1" />
+    <End Role="MiniOrder" Type="Self.MiniOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SuperOrder">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MiniOrder">
+        <PropertyRef Name="SuperOrder_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Specs">
+    <End Role="Specs" Type="Self.Specs" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Specs_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OnlineShopModelStoreContainer">
+    <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MiniOrder" EntityType="Self.MiniOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Specs" EntityType="Self.Specs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SuperOrder" EntityType="Self.SuperOrder" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Images_Products" Association="Self.FK_Images_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Images" EntitySet="Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MiniOrder_Products" Association="Self.FK_MiniOrder_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="MiniOrder" EntitySet="MiniOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MiniOrder_SuperOrder" Association="Self.FK_MiniOrder_SuperOrder">
+      <End Role="SuperOrder" EntitySet="SuperOrder" />
+      <End Role="MiniOrder" EntitySet="MiniOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Specs" Association="Self.FK_Products_Specs">
+      <End Role="Specs" EntitySet="Specs" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

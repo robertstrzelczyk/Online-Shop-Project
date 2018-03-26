@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0090de1ec5e140aaa74cf0ea0e2778df" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineShopModel.Images" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.MiniOrder" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Orders" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Products" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Specs" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.SuperOrder" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="OnlineShopModel.FK_Images_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.FK_MiniOrder_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.FK_MiniOrder_SuperOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.FK_Products_Specs" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

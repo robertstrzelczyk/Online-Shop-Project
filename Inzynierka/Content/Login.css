@@ -1,0 +1,117 @@
+/**/
+.login {
+	border: 1px solid #D6D6D6;
+	padding: 2em 0 0 0;
+	min-height: 456px;
+	width: 50%;
+    margin-top:40px;
+}
+.labelTop {
+	display: block;
+	font-weight: bold;
+	text-align: left; /*Ustawia rowno inputy*/
+	color: #444;
+	float: left;
+	width: 29%;
+}
+.login h4,.sign-up h4 {
+	text-transform: uppercase;
+	font-size: 1.2em;    /*style dla h4 dla s³owa LOGOWANIE i REJESTRACJA*/
+	font-weight: 700;
+	color: #3498db;
+}
+
+.require {
+	color: #F00; /*requie sluzy do gwiazdek przy inputach*/
+	font-size: 11px;
+}
+.cus_info_wrap label {
+	float: left;
+	display: block; /*cus info wrap label sluzy do napisów Email i tak dalej przy inputach, nadaje styl ten blok */
+	font-size: 15px;
+	padding: 3px 0 0;
+}
+.cus_info_wrap {
+	margin-bottom: 20px; /*Tutaj s³uzy do odstepow miedzy polami*/
+	padding: 0 25px; 
+    margin-top:20px;
+}
+.cus_info_wrap input[type="text"] {
+	width: 71%;
+	padding: 4px;
+	font-size: 13px;        /*sluzy do nadania styli i ustawienia pola email*/
+	font-weight: 400;
+	border:1px solid #D6D6D6;
+	outline:none;
+}
+.cus_info_wrap input[type="password"] {
+	width: 71%;
+	padding: 4px;
+	font-size: 13px;
+	font-weight: 400;  /*Tutaj sluzy do nadania styli i ustawienia pola haslo*/
+	border: 1px solid #D6D6D6;
+	outline: none;
+}
+.botton{
+	background: #175ed4;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+	border: 0;
+	color: #fff;  /*tutaj mamy caly styl dla przyciskow zaloguj i zarejestruj*/
+	font-weight: 700;
+	height: 31px;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 110px!important;
+	text-align: center;
+}
+.labelTop.confirmpass {
+	line-height: 1;   /*Tutaj jest ustawienie Potwierdz haslo: jest ustawione wyzej, na wysokosci pola */
+	margin-top: -4px;
+}
+.sign-up{
+	border: 1px solid #D6D6D6;
+	border-left:none;
+	padding: 2em 0 0 0; /*Tutaj mamy nadanie stylu i ustawien dla prawej strony czyli dla Rejestracji*/
+	min-height: 480px;
+	width: 50%;
+    margin-top:40px;
+    min-width: 300px;
+}
+.sign-up h4{
+	margin-bottom:50px; /*ustawienie marginesu dla pol w rejestracji*/ 
+}
+
+
+
+.login {
+	border: 1px solid #D6D6D6;
+	padding: 2em 0 0 0;  /*Ustawienie lewej strony czyli Logowanie*/
+	min-height: 480px;
+	width: 50%;
+    min-width:300px;
+}
+.botton1 {
+	margin: 40px; /*ustawienie przyciskow, nadanie marginesu*/
+
+}
+section#main {
+	margin: 2em 1em 5em -1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

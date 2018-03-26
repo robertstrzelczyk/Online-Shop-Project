@@ -1,0 +1,102 @@
+
+#Asus {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+
+}
+#Asus:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#MSI {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#MSI:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#Dell {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#Dell:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#Acer {
+    margin-top:60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+  
+}
+#Acer:hover {
+   
+    cursor: pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#Lenovo {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#Lenovo:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#HP {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#HP:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#Sony {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#Sony:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+#Samsung {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#Samsung:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.3,1.3);
+        -moz-transform: scale(1.3,1.3);
+}
+
+#Apple {
+    margin-top: 60px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+}
+#Apple:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+}
+.row {
+    margin-left: 60px;
+}
+#row3 {
+    margin-bottom: 60px;
+}
+

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Images_Products" FromRole="Images" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="MiniOrder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SuperOrder_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_MiniOrder_Products" FromRole="MiniOrder" ToRole="Products" />
+    <NavigationProperty Name="SuperOrder" Relationship="Self.FK_MiniOrder_SuperOrder" FromRole="MiniOrder" ToRole="SuperOrder" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Products_ID" Type="Int32" Nullable="false" />
+    <Property Name="Order_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="Client_FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Zip_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Manufacturer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Specs_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Images" Relationship="Self.FK_Images_Products" FromRole="Products" ToRole="Images" />
+    <NavigationProperty Name="MiniOrder" Relationship="Self.FK_MiniOrder_Products" FromRole="Products" ToRole="MiniOrder" />
+    <NavigationProperty Name="Specs" Relationship="Self.FK_Products_Specs" FromRole="Products" ToRole="Specs" />
+  </EntityType>
+  <EntityType Name="Specs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Processor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RAM" Type="Int32" />
+    <Property Name="Max_RAM" Type="Int32" />
+    <Property Name="Disk_size" Type="Int32" />
+    <Property Name="Disk_type" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Display_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Display_size" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="Resolution" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Graphics_card" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Battery" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="OS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Height" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="Width" Type="Decimal" Precision="4" Scale="1" />
+    <Property Name="Depth" Type="Decimal" Precision="4" Scale="1" />
+    <Property Name="Weight" Type="Decimal" Precision="3" Scale="2" />
+    <Property Name="Warranty" Type="Int32" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_Specs" FromRole="Specs" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="SuperOrder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Order_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Client_FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Zip_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="MiniOrder" Relationship="Self.FK_MiniOrder_SuperOrder" FromRole="SuperOrder" ToRole="MiniOrder" />
+  </EntityType>
+  <Association Name="FK_Images_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Images" Type="Self.Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Images">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MiniOrder_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="MiniOrder" Type="Self.MiniOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MiniOrder">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MiniOrder_SuperOrder">
+    <End Role="SuperOrder" Type="Self.SuperOrder" Multiplicity="1" />
+    <End Role="MiniOrder" Type="Self.MiniOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SuperOrder">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MiniOrder">
+        <PropertyRef Name="SuperOrder_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Specs">
+    <End Role="Specs" Type="Self.Specs" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Specs_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OnlineShopEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Images" EntityType="Self.Images" />
+    <EntitySet Name="MiniOrder" EntityType="Self.MiniOrder" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="Specs" EntityType="Self.Specs" />
+    <EntitySet Name="SuperOrder" EntityType="Self.SuperOrder" />
+    <AssociationSet Name="FK_Images_Products" Association="Self.FK_Images_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Images" EntitySet="Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MiniOrder_Products" Association="Self.FK_MiniOrder_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="MiniOrder" EntitySet="MiniOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MiniOrder_SuperOrder" Association="Self.FK_MiniOrder_SuperOrder">
+      <End Role="SuperOrder" EntitySet="SuperOrder" />
+      <End Role="MiniOrder" EntitySet="MiniOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Specs" Association="Self.FK_Products_Specs">
+      <End Role="Specs" EntitySet="Specs" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,70 @@
+.container {
+    width: 90%;
+    margin-bottom:20px;
+
+}
+.flexslider {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top:40px;
+}
+.name {
+    margin:auto;
+    margin-top:40px;   
+    font-size: 25px;
+    text-align:center;
+}
+.price {
+    margin-top:100px;
+    border: 1px solid; 
+    border-radius:20px;
+    border-color:#A9A9A9; 
+}
+.pr {
+    font-size: 15px;
+    padding:10px;
+}
+.currentprice {
+    font-size: 28px;
+    padding: 40px;
+    color:dimgray;
+}
+.cartitem a {
+    text-decoration:none;
+    color:#FFF5EE;
+    font-size:15px;
+    letter-spacing: 1px;
+    background:#87CEEB;
+    border-radius:20px;             
+    text-align:center;
+    padding: 15px 25px;
+    width:100%;
+}
+.cartitem a:hover {
+	background: #2A576C;
+}
+.cartitem {
+    margin: 80px 30px 40px 30px; 
+  
+}
+@media screen and (max-width: 380px) {
+    .price {
+        width: 250px;
+    }
+}
+
+.table {
+    margin-top: 60px;
+}
+
+th {
+    text-align: center;
+    font-size: 15px;
+}
+
+td {
+    background-color: #e6e6e6;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

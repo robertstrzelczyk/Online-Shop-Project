@@ -1,0 +1,158 @@
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\csc.exe
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\System.Collections.Immutable.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\vbc.exe
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe.config
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Inzynierka.dll.config
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Inzynierka.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Inzynierka.pdb
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\EntityFramework.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Microsoft.Web.Infrastructure.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Helpers.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Mvc.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Razor.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\EntityFramework.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Razor.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Helpers.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\bin\System.Web.Mvc.xml
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csprojResolveAssemblyReference.cache
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\obj\Debug\Inzynierka.dll
+c:\users\robert\documents\visual studio 2015\Projects\Inzynierka\Inzynierka\obj\Debug\Inzynierka.pdb
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\csc.exe
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\vbc.exe
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Inzynierka.dll.config
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Inzynierka.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Inzynierka.pdb
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\EntityFramework.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Helpers.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Mvc.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Razor.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\EntityFramework.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Razor.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Helpers.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\bin\System.Web.Mvc.xml
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csprojResolveAssemblyReference.cache
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\obj\Debug\Inzynierka.dll
+D:\Projects\ASP.NET\Inzynierka\Inzynierka\obj\Debug\Inzynierka.pdb
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\csc.exe
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\System.Collections.Immutable.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\System.Reflection.Metadata.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\vbc.exe
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe.config
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Inzynierka.dll.config
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Inzynierka.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Inzynierka.pdb
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\EntityFramework.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Microsoft.Web.Infrastructure.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Helpers.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Mvc.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Razor.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\EntityFramework.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Razor.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Helpers.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\bin\System.Web.Mvc.xml
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csprojResolveAssemblyReference.cache
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.dll
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.pdb
+D:\Inżynierka 26-07-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csproj.CoreCompileInputs.cache
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\csc.exe
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\System.Collections.Immutable.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\System.Reflection.Metadata.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\vbc.exe
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\roslyn\VBCSCompiler.exe.config
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Inzynierka.dll.config
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Inzynierka.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Inzynierka.pdb
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\EntityFramework.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Microsoft.Web.Infrastructure.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Newtonsoft.Json.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Net.Http.Formatting.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Helpers.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Http.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Http.WebHost.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Mvc.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Razor.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\EntityFramework.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\EntityFramework.SqlServer.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\Newtonsoft.Json.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Net.Http.Formatting.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Http.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Http.WebHost.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Razor.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Deployment.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Webpages.Razor.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Helpers.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\bin\System.Web.Mvc.xml
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csproj.CoreCompileInputs.cache
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.dll
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.pdb
+D:\Inżynierka 18-10-2017\Inzynierka\Inzynierka\obj\Debug\Inzynierka.csprojResolveAssemblyReference.cache
